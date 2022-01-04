@@ -1,4 +1,4 @@
-// Calculator in the terminal
+// Package main is a executable calculator program
 package main
 
 import (
