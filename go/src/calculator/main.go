@@ -30,7 +30,7 @@ func main() {
 	// Start the calculation switch statement
 	switch operator {
 	case "+":
-		sum, err := calc.Add(number1, number2)
+		sum, err := calc.Sum(number1, number2)
 		if err != nil {
 			fmt.Println(err)
 		} else {

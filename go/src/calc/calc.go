@@ -3,10 +3,14 @@ package calc
 
 import "errors"
 
-// Add finds the sum of two numbers
+// Sum finds the sum of two numbers
 // Returns a sum and any error encountered.
-func Add(summand1 float64, summand2 float64) (float64, error) {
-	return summand1 + summand2, nil
+func Sum(numbers ...float64) (float64, error) {
+	var sum float64 = 0
+	for _, number := range numbers {
+		sum += number
+	}
+	return sum, nil
 }
 
 // Subtract finds the difference of two numbers.
